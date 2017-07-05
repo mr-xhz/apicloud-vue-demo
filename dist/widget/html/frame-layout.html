@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/common.css?_v_=236e8372a6b63add40a1da60ca02d826">
+</head>
+<body>
+  <script type="text/javascript">
+      var rootSize = document.querySelector("body").clientWidth / 7.5;
+      document.querySelector("html").style.fontSize = rootSize+"px";
+  </script>
+  <header id="header"></header>
+  <div id="app"></div>
+  <footer id="footer"></footer>
+  <script type="text/javascript" src="../script/common.js?_v_=b38a863ef935333bd40853fe82237742"> </script>
+  <script>
+    var reg = new RegExp("(^|&)entry=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    var entry = "index";
+    if (r != null) entry = decodeURIComponent(r[2]);
+    document.write('<script type="text/javascript" src="../script/'+entry+'.js?_v_=1499255546013"> </'+'script>');
+  </script>
+</body>
+</html>
