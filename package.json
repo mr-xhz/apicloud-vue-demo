@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "vue-apicloud-web demo",
   "scripts": {
-    "dev": "node core/dev-server.js --env-dev --config-dev --server-web",
-    "test-web": "node core/build.js --env-product --config-test --server-web",
-    "product-web": "node core/build.js --env-product --config-product --server-web",
-    "test-apicloud": "node core/build.js --env-product --config-test --server-apicloud",
-    "product-apicloud": "node core/build.js --env-product --config-product --server-apicloud",
-    "apicloud": "node core/build.js --env-product --config-test --server-apicloud --sync"
+    "start":"npm run init && npm run dev",
+    "init":"node core/init-dist.js",
+    "dev": "npm run init && node core/dev-server.js --env-dev --config-dev --server-web",
+    "test-web": "npm run init && node core/build.js --env-product --config-test --server-web",
+    "product-web": "npm run init && node core/build.js --env-product --config-product --server-web",
+    "test-apicloud": "npm run init && node core/build.js --env-product --config-test --server-apicloud",
+    "product-apicloud": "npm run init && node core/build.js --env-product --config-product --server-apicloud",
+    "apicloud": "npm run init && node core/build.js --env-product --config-test --server-apicloud --sync"
   },
-  "author": "",
+  "author": "xhz",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
