@@ -627,8 +627,8 @@ u.statusBarHeight = function(){
   }
   return 0;
 };
-u.headerHeight = function(){
-  return u.rem2px(0.88)+u.statusBarHeight() + 1;
+u.headerHeight = function(rem){
+  return u.rem2px(rem || 0.88)+u.statusBarHeight() + 1;
 };
 u.rem2px = function(rem){
     rem = rem || 0;

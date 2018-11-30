@@ -4,10 +4,11 @@ import Header from '@P/header-P.vue'
 import Footer from '@P/footer-P.vue'
 import App from '@P/index-P.vue'
 import $api from '@U/api'
-import commonR from '@R/common-R'
 
-//注册路由
-commonR.register();
+import commonEntry from './common'
+
+//初始化VUE和一些组件
+commonEntry.init();
 
 var index = {
   createHeader(){

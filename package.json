@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "vue-apicloud-web demo",
   "scripts": {
-    "start":"npm run init && npm run dev",
-    "init":"node core/init-dist.js",
+    "start": "npm run dev",
+    "init": "node core/init-dist.js",
     "dev": "npm run init && node core/dev-server.js --env-dev --config-dev --server-web",
     "test-web": "npm run init && node core/build.js --env-product --config-test --server-web",
     "product-web": "npm run init && node core/build.js --env-product --config-product --server-web",
@@ -28,6 +28,7 @@
     "file-loader": "^0.11.1",
     "friendly-errors-webpack-plugin": "^1.1.3",
     "http-proxy-middleware": "^0.17.3",
+    "minirefresh": "^2.0.2",
     "node-sass": "^4.5.3",
     "opn": "^4.0.2",
     "sass-loader": "^4.0.2",

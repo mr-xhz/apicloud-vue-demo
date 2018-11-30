@@ -17,9 +17,9 @@ function copyIt(from, to) {
         if(!fs.existsSync(distPath)){
             fs.mkdirSync(distPath);
         }
-        child_process.spawn('xcopy', [from,distPath ,'/e']);
+        child_process.spawnSync('xcopy', [from,distPath ,'/f','/y','/s','/e']);
     }else{
-        child_process.spawn('cp', ['-r', from, to]);
+        child_process.spawnSync('cp', ['-r', from, to]);
     }
 }
 

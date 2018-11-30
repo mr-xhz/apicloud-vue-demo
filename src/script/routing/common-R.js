@@ -2,7 +2,6 @@ import $api from '@U/api'
 //加载所有的路由
 import pageR from '@R/page-R'
 
-
 export default{
   routes:{},
   _formatParam(param){

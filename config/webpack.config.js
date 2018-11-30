@@ -46,6 +46,7 @@ var baseWebpackConfig = {
       '@E':path.resolve('src/script/entity'),
       '@R':path.resolve('src/script/routing'),
       '@U':path.resolve('src/script/utils'),
+      '@IMAGE':path.resolve('src/image'),
       '@': path.resolve('src')
     }
   },

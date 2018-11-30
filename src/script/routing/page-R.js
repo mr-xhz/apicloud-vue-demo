@@ -1,6 +1,8 @@
 import $api from '@U/api'
 
-export default{
+import interceptorGlobal from '@R/interceptor-global'
+
+export default interceptorGlobal.proxy("page",{ 
   index(pageParam){
     $api.openWin({
       name:'index-win',
@@ -13,4 +15,4 @@ export default{
       pageParam
     },true);
   }
-}
+})
